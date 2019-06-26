@@ -8,10 +8,12 @@ exit 1
 echo "start to make update.img..."
 if [ ! -f "Image/parameter.txt" ]; then
 	echo "Error:No found parameter!"
+	exit 1
 #	pause
 fi
 if [ ! -f "package-file" ]; then
 	echo "Error:No found package-file!"
+	exit 1
 #	pause
 fi
 ./afptool -pack ./ Image/update.img || pause
