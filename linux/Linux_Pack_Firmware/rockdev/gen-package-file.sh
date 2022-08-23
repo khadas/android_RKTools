@@ -14,8 +14,8 @@ find_all_of_partitions() {
     do
         if [ -f "$IMAGE_PATH/$partition.img" ]; then
             echo -e "$partition\t$IMAGE_PATH/$partition.img"
-        elif [ -f "$IMAGE_PATH/${partition%%_*}.img" ]; then
-            echo -e "$partition\t$IMAGE_PATH/${partition%%_*}.img"
+        elif [ -f "$IMAGE_PATH/${partition%_*}.img" ]; then
+            echo -e "$partition\t$IMAGE_PATH/${partition%_*}.img"
         fi
     done
 }
