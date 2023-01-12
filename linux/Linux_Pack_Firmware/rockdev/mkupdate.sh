@@ -16,6 +16,7 @@ vendor_id_map["rk3126c"]="-RK312A"
 vendor_id_map["rk3399"]="-RK330C"
 vendor_id_map["rk3588"]="-RK3588"
 vendor_id_map["rk3562"]="-RK3562"
+vendor_id_map["rk3528"]="-RK3528"
 
 readonly PLATFORM=$1
 readonly IMAGE_PATH=$2
